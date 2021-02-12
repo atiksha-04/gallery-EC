@@ -19,6 +19,7 @@ body {
   flex-wrap: wrap;
   border: 4px dashed hsl(212, 86%, 64%);
   padding: 12px 0;
+  padding: 0 4px;
   margin: 100px;
 }
 
@@ -35,6 +36,10 @@ body {
   vertical-align: middle;
   width: 100%;
   /*border-radius: 4%;*/
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 6%;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -226,4 +231,5 @@ img {
 .active,
 .demo:hover {
   opacity: 1;
+}
 }
