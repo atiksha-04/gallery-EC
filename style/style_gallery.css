@@ -11,7 +11,23 @@ body {
   text-align: center;
   padding: 32px;
 }
-
+.gallery-header {
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+.gallery-header span {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 90px;
+  color: rgb(30, 101, 122);
+}
+.gallery-header p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 100;
+  font-size: large;
+  color: rgb(131, 161, 161);
+}
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
@@ -42,16 +58,17 @@ body {
   border-radius: 4%;
 }
 
-.mfp-bottom-bar,*{
-   font-family: 'Abel', sans-serif;
+.mfp-bottom-bar,
+* {
+  font-family: "Abel", sans-serif;
 }
 
-a{
+a {
   outline: 0 !important;
 }
 
 a.image-popup-vertical-fit {
-    cursor: -webkit-zoom-in;
+  cursor: -webkit-zoom-in;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -71,9 +88,6 @@ a.image-popup-vertical-fit {
     max-width: 100%;
   }
 }
-
-
-
 
 /*Hover on the Image*/
 
@@ -134,4 +148,3 @@ a.image-popup-vertical-fit {
 .img-wrap.active .textGallery_mobile {
   display: block;
 }*/
-
