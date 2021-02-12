@@ -119,8 +119,12 @@ body {
     max-width: 100%;
   }
   .row{
-    width: 85%;
+    width: 70%;
     margin-left: 30px;
+  }
+
+  .gallery-header{
+    width: 75%;
   }
  
 }
@@ -133,3 +137,4 @@ body {
     max-width: 100%;
   }
 }
+
