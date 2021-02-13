@@ -27,6 +27,7 @@ body {
   color: #1dcaff;
 }
 
+/*Header*/
 .gallery-header {
   margin-top: 60px;
   align-items: center;
@@ -62,6 +63,25 @@ body {
   margin: 100px;
 }
 
+/*Transparent text over image*/
+.galleryContainer {
+  position: relative;
+  max-width: 700px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.galleryContainer .textGallery {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 89%; /* Full width */
+  padding: 10px; /* Some padding */
+  border-radius: 4%;
+  text-align: center;
+}
+
 /* Create four equal columns that sits next to each other */
 .column {
   -ms-flex: 25%; /* IE10 */
@@ -81,10 +101,9 @@ body {
   border-radius: 4%;
 }
 
-.column img:hover{
+.column img:hover {
   animation: shake 1s infinite;
 }
-
 
 @keyframes float {
   0% {
@@ -98,17 +117,39 @@ body {
   }
 }
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -118,15 +159,14 @@ body {
     flex: 100%;
     max-width: 100%;
   }
-  .row{
+  .row {
     width: 70%;
     margin-left: 30px;
   }
 
-  .gallery-header{
+  .gallery-header {
     width: 75%;
   }
- 
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -139,7 +179,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -147,7 +189,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
