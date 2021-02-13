@@ -180,6 +180,7 @@ body {
   }
 }
 
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
@@ -187,11 +188,20 @@ body {
     flex: 100%;
     max-width: 100%;
   }
+<<<<<<< HEAD
   .row {
     margin: auto;
   }
   .gallery-header {
     margin: 70px auto 10px;
+=======
+  .gallery-header {
+    margin-top: 20%; 
+  }
+  .gallery-header span {
+    font-size: 40px;
+    text-align: center;
+>>>>>>> d7b32ef448fb3506dfd569732eccbcc3fc4fa398
   }
 }
 
