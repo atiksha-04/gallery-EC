@@ -60,7 +60,7 @@ body {
   border: 4px groove hsl(212, 86%, 64%);
   padding: 12px 0;
   padding: 0 4px;
-  margin: 100px;
+  margin: 70px;
 }
 
 /*Transparent text over image*/
@@ -161,11 +161,14 @@ body {
   }
   .row {
     width: 70%;
-    margin-left: 30px;
   }
 
   .gallery-header {
+    text-align: center;
     width: 75%;
+  }
+  .gallery-header span {
+    font-size: 70px;
   }
 }
 
