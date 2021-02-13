@@ -1,3 +1,10 @@
+html body {
+  background-image: linear-gradient(
+    rgb(252, 252, 252),
+    rgb(66, 106, 192),
+    rgb(0, 0, 0)
+  );
+}
 * {
   box-sizing: border-box;
 }
@@ -52,15 +59,17 @@ body {
   font-size: large;
   color: rgb(131, 161, 161);
 }
+
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   border: 4px groove hsl(212, 86%, 64%);
-  padding: 12px 0;
-  padding: 0 4px;
-  margin: 70px;
+  padding: 10px 0;
+  padding: 0 2px;
+  margin: 20px 80px 50px;
+  border-radius: 1.2%;
 }
 
 /*Transparent text over image*/
@@ -76,18 +85,18 @@ body {
   background: rgb(0, 0, 0); /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1; /* Grey text */
-  width: 89%; /* Full width */
+  width: 92%; /* Full width */
   padding: 10px; /* Some padding */
-  border-radius: 4%;
+  border-radius: 12%;
   text-align: center;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding-bottom: 8px;
 }
 
 .column img {
@@ -97,7 +106,6 @@ body {
   /*border-radius: 4%;*/
   margin-top: 8px;
   vertical-align: middle;
-  width: 100%;
   border-radius: 4%;
 }
 
@@ -178,6 +186,12 @@ body {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
+  }
+  .row {
+    margin: auto;
+  }
+  .gallery-header {
+    margin: 70px auto 10px;
   }
 }
 
